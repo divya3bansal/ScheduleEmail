@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Schedule Email Application</title>
+   
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    
+    <script src="../static/js/jquery-1.11.2.js"></script>
+    <script src="../static/js/addUser.js"></script>
+   
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Python Flask App</h3>
+      </div>
+     <section>
+      <form class="form-horizontal" method="post" action="/addUser">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Fill the details below</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtEventid">Event ID</label>
+  <div class="col-md-4">
+  <input id="txtEventid" name="inputEventid" type="text" placeholder="placeholder" class="form-control input-md">
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtUsername">Username</label>  
+  <div class="col-md-4">
+  <input id="txtUsername" name="inputUsername" type="text" placeholder="placeholder" class="form-control input-md">
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtEmailid">Email ID</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="txtEmailid" name="inputEmailid" ></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <input id="btnSave" name="btnSave" class="btn btn-primary" type="submit" value="Save" />
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+    </div>
+  </body>
+</html>
+
